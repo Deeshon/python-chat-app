@@ -1,10 +1,20 @@
+const socketio = io.connect("http://192.168.7.153:5000")
 
-var socketio = io()
+const sendBtn = document.querySelector("button")
 
+sendBtn.addEventListener('click', ()=> {
+    const username = document.getElementById("username")
+    const message = document.getElementById("message")
 
-const message = document.getElementById("message")
-const sendBtn = document.querySelector("#send-btn")
-sendBtn.addEventListener("click", () => {
-    socketio.emit("message", {data: message.value})
-    message.value = ""
+    socketio.emit('recieve msg', {username: username.value, message: message.value})
 })
+
+socketio.on("send message", (msg) => {
+    const content = document.querySelector(".content")
+    const p = document.createElement("p")
+    p.textContent = `${msg.username}: ${msg.message}`
+
+    content.appendChild(p)
+})
+
+
