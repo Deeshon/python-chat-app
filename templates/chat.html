@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+    integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+    crossorigin="anonymous"
+  ></script>
+    <script src="/static/script.js" defer></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Chat App</title>
+</head>
+<body>
+  <div class="header"></div>
+  <div class="main-container">
+    <div class="nav-bar"></div>
+    <div class="content">
+      <div class="chat-content">
+        <div class="messages">Deeshon: Hey</div>
+        <div class="messages">Aaran: Yo</div>
+        <div class="messages">Deeshon: It Works?</div>
+        <div class="messages">Aaran: Well lets see</div>
+      </div>
+      <div class="chat-controls">
+        <form>
+          <input type="text" name="message" id="message" placeholder="Message">
+        </form>
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

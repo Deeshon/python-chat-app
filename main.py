@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, session
 from flask_socketio import SocketIO
 
 app = Flask(__name__)
@@ -6,9 +6,19 @@ app.config["SECRET KEY"] = "secret!"
 socketio = SocketIO(app)
 
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 def home():
-    return render_template("home.html")
+    if request.method == "POST":
+        username = request.form.get("username")
+
+        return render_template("chat.html")
+    else:
+    
+        return render_template("home.html")
+
+@app.route("/chat")
+def chat():
+    return render_template("chat.html")
 
 @socketio.on('recieve msg')
 def handle_msg(data, methods=["POST", "GET"]):
