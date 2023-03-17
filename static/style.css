@@ -97,11 +97,10 @@ img {
     margin-top: 20px;
     margin-left: 25px;
     border-radius: 15px;
-    background: #00bfb6;
+    background: #506877;
     color: #fff;
     padding: 20px;
     text-align: left;
-    font-weight: 900;
     font-family: arial;
     position: relative;
   }
@@ -131,8 +130,8 @@ img {
     height: 0px;
     position: absolute;
     border-left: 15px solid transparent;
-    border-right: 15px solid #00bfb6;
-    border-top: 15px solid #00bfb6;
+    border-right: 15px solid #506877;
+    border-top: 15px solid #506877;
     border-bottom: 15px solid transparent;
     left: -16px;
     top: 0px;

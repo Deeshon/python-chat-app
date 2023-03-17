@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style-home.css">
     <title>Document</title>
 </head>
 <body>
-    <form action="/" method="post">
-        <input type="text" name="username" id="user-name" placeholder="Username">
-        <input type="submit" value="Enter chat room">
-    </form>
+
+
+    <div class="main-container">
+        <div class="image">
+            <img src="/static/profile1.png" alt="profile">
+        </div>
+        <div>
+            <p>Have an account?</p>
+        </div>
+        <div class="form">
+            <form action="/" method="post">
+                <input type="text" name="username" id="user-name" placeholder="Username">
+                <br>
+                <br>    
+                <input type="password" name="password" id="password" placeholder="Password">
+                <br>
+                <br>
+                <input type="submit" value="Enter chat room" id="submit-btn">
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>
