@@ -1,4 +1,4 @@
-const socketio = io.connect("http://192.168.7.153:5000")
+const socketio = io.connect("http://192.168.199.153:5000")
 
 const sendBtn = document.querySelector("button")
 
@@ -9,7 +9,7 @@ sendBtn.addEventListener('click', ()=> {
 })
 
 socketio.on("send message", (msg) => {
-    const content = document.querySelector(".chat-content")
+    const content = document.querySelector(".content")
     const div = document.createElement("div")
     div.classList.add("box3", "sb14")
     div.textContent = `${msg.name}: ${msg.message}`
