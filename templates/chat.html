@@ -14,29 +14,39 @@
     <title>Chat App</title>
 </head>
 <body>
-  <div class="header">
-    <div class="title">
-      <p>Chatlounge</p>
+  <div class="nav-bar">
+    <div class="nav-header" style="display: flex; justify-content: space-between;">
+      <div style="background-color: white; width: 40px; height: 40px; border-radius: 50%; margin-top: 20px; margin-left: 10px;"></div>
+      <div style="margin-top: 10px;"><h2 style="color: white; margin-left: 20px;">Chats</h2></div>
+      <div style="width: 50px; height: 50px; margin-top: 10px; font-size: 30px; text-align: center; color: white; margin-left: 60px; font-weight: bold;">...</div>
+      <div style="width: 50px; height: 50px; margin-top: 20px; font-size: 30px; text-align: center; color: white;">+</div>
+      <div style="width: 50px; height: 50px; margin-top: 20px; font-size: 30px; text-align: center; color: white;">☼</div>
+    </div>
+    <div class="search">
+      <input type="text" name="search" id="search" placeholder="Search" style="color:white; margin-left: 20px; margin-top: 20px; width: 300px; height: 30px; border-radius: 20px; background-color: #2b2b2b;">
+    </div>
+    <div class="chats">
+      <div class="chat" >
+        <div style="background-color: plum; width: 50px; height: 50px; border-radius: 50%; margin-left: 30px;"></div>
+        <div style="margin-top: 30px;"><span style="color: white; margin-left: 20px;">Public Chat</span></div>
+      </div>
+      <div class="chat" >
+        <div style="background-color: plum; width: 50px; height: 50px; border-radius: 50%; margin-left: 30px;"></div>
+        <div style="margin-top: 30px;"><span style="color: white; margin-left: 20px;">Public Chat</span></div>
+      </div>
+      <div class="chat" >
+        <div style="background-color: plum; width: 50px; height: 50px; border-radius: 50%; margin-left: 30px;"></div>
+        <div style="margin-top: 30px;"><span style="color: white; margin-left: 20px;">Public Chat</span></div>
+      </div>
+
     </div>
   </div>
   <div class="main-container">
-    <div class="nav-bar">
-      <div class="image">
-        <img src="/static/profile1.png" alt="profile pic" >
-      </div>
-      <div class="username">
-        <p id="name">{{username}}</p>
-      </div>
-    </div>
-    <div class="content">
-      <div class="chat-content" id="scroll">
-      </div>
-      <div class="chat-controls">
-        <form>
-          <input type="text" name="message" id="message" placeholder="Message">
-        </form>
-        <button id="send-button">Send</button>
-      </div>
+    <div class="header"></div>
+    <div class="content scroll"></div>
+    <div class="msg-box">
+      <div style="margin-top: 20px;"><input type="text" name="message" id="message" placeholder="Aa"></div>
+      <div style="margin-top: 20px; margin-left: -30px;"><button style="width: 50px;" id="sendbtn"><img src="/static/send-removebg-preview.png" alt=""></button></div>
     </div>
   </div>
 </body>
