@@ -1,4 +1,4 @@
-const socketio = io.connect("http://192.168.199.153:5000")
+const socketio = io.connect("http://192.168.53.153:5000")
 
 const sendBtn = document.querySelector("button")
 

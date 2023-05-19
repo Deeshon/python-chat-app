@@ -30,4 +30,4 @@ def handle_msg(data, methods=["POST", "GET"]):
 
 
 if __name__ == "__main__":
-    socketio.run(app, host="192.168.199.153", debug=True)
+    socketio.run(app, host="192.168.53.153", debug=True)
